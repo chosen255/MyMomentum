@@ -1,0 +1,172 @@
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    align-items: center;
+    background-color: mediumpurple;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    overflow:hidden;
+    height: 100%;
+    margin: 0;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+.side-left {
+    flex: 1;
+    align-self: start;
+}
+.main-center {
+    flex: 2.5;
+    align-self: flex-end;
+}
+.side-right {
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.clock {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: fit-content;
+    text-shadow: 1px 1px 1px;
+}
+
+.hello-who {
+    font-size: 70px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    margin: auto;
+    display: block;
+    color: white;
+}
+
+.greeting-hello {
+    text-align: center;
+}
+
+.hello {
+    font-size: 70px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+}
+
+.renameBtn {
+    color: white;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.weather {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px;
+}
+
+.quote {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.todo-form {
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    margin: 200px auto 150px;
+    display: block;
+    border: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    color: white;
+
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+  }
+
+.todo-list {
+    width: fit-content;
+    list-style-type: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.todo-value {
+    cursor: pointer;
+}
+
+.todo-btn {
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.todo-checking {
+    display: none;
+}
+
+.todo-checked {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 1080px) {
+    
+    body {
+        flex-direction: column;
+    }
+
+    .side-left {
+        align-self: center;
+        flex: 0.75;
+    }
+
+    .main-center {
+        align-self: center;
+        flex: 1;
+    }
+
+    .side-right {
+        align-self: center;
+        flex: 1;
+    }
+
+    .clock {
+        margin: 0;
+    }
+
+    .todo-form {
+        margin-top: 150px;
+        margin-bottom: 0px;
+    }
+
+    .todo-list {
+        padding: 0;
+    }
+
+}
