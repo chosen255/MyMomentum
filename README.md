@@ -2,4 +2,4 @@
 
 First made todo app for chrome browser
 
-simple login, clock, wheather, todo and greeting
+simple login, clock, wheather, todo list and greeting
