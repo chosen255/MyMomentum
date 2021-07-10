@@ -15,7 +15,7 @@ function onGeoSuccess(position) {
 }
 
 function onGeoError() {
-    alert("Can't find your location no weater service");
+    alert("Can't find your location, no weater service");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
