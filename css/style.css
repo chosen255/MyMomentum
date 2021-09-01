@@ -116,6 +116,10 @@ body {
     font-weight: bold;
 }
 
+.todo-list li {
+    margin: 5px;
+}
+
 .todo-value {
     cursor: pointer;
 }
